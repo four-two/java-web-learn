@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../listener-interface" />
     <file type="web" url="file://$PROJECT_DIR$/../online-test-system" />
     <file type="web" url="file://$PROJECT_DIR$/../servlet-data-share" />
     <file type="web" url="file://$PROJECT_DIR$" />
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../online-test-system/pom.xml" />
         <option value="$PROJECT_DIR$/../servlet-data-share/pom.xml" />
+        <option value="$PROJECT_DIR$/../listener-interface/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
