@@ -1,24 +1,77 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>Archetype Created Web Application</display-name>
 
-  <servlet>
-    <servlet-name>SCOne</servlet-name>
-    <servlet-class>controller.learnServletContext.OneServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>SCTwo</servlet-name>
-    <servlet-class>controller.learnServletContext.TwoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>SCTwo</servlet-name>
-    <url-pattern>/SCTwo</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>SCOne</servlet-name>
-    <url-pattern>/SCOne</url-pattern>
-  </servlet-mapping>
+    <servlet>
+        <servlet-name>SCOne</servlet-name>
+        <servlet-class>controller.learnServletContext.OneServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SCTwo</servlet-name>
+        <servlet-class>controller.learnServletContext.TwoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>COne</servlet-name>
+        <servlet-class>controller.learnCookie.OneServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CTwo</servlet-name>
+        <servlet-class>controller.learnCookie.TwoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>STwo</servlet-name>
+        <servlet-class>controller.learnHttpSession.TwoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SOne</servlet-name>
+        <servlet-class>controller.learnHttpSession.OneServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ROne</servlet-name>
+        <servlet-class>controller.learnHttpServletRequest.OneServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RTwo</servlet-name>
+        <servlet-class>controller.learnHttpServletRequest.TwoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RTwo</servlet-name>
+        <url-pattern>/RTwo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ROne</servlet-name>
+        <url-pattern>/ROne</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SOne</servlet-name>
+        <url-pattern>/SOne</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>STwo</servlet-name>
+        <url-pattern>/STwo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CTwo</servlet-name>
+        <url-pattern>/CTwo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>COne</servlet-name>
+        <url-pattern>/COne</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SCTwo</servlet-name>
+        <url-pattern>/SCTwo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SCOne</servlet-name>
+        <url-pattern>/SCOne</url-pattern>
+    </servlet-mapping>
+    <!--HttpSession空闲时间-->
+    <session-config>
+        <!--单位分钟-->
+        <session-timeout>5</session-timeout>
+    </session-config>
 </web-app>

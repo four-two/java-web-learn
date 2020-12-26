@@ -26,7 +26,9 @@ import java.io.IOException;
 *       1.通过request向服务器索要ServletContext并将数据添加到全局作用域对象里面
 *           request.getServletContext().setAttribute(String key, Object object)
 *       3.通过request向服务器索要ServletContext并根据key获取object
-*
+*           (Object) request.getServletContext().getAttribute("key")
+*   注意事项：
+*       不要无限制的往全局作用域对象里面放数据
 * */
 public class OneServlet extends HttpServlet {
 
