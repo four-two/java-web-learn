@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>UserAdd</servlet-name>
+        <servlet-class>controller.UserAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserFind</servlet-name>
+        <servlet-class>controller.UserFind</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDelete</servlet-name>
+        <servlet-class>controller.UserDelete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserAlter</servlet-name>
+        <servlet-class>controller.UserAlter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserLogin</servlet-name>
+        <servlet-class>controller.UserLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLogin</servlet-name>
+        <url-pattern>/UserLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAlter</servlet-name>
+        <url-pattern>/UserAlter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDelete</servlet-name>
+        <url-pattern>/UserDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserFind</servlet-name>
+        <url-pattern>/UserFind</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAdd</servlet-name>
+        <url-pattern>/UserAdd</url-pattern>
+    </servlet-mapping>
+    <!--默认加载资源文件-->
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+</web-app>
